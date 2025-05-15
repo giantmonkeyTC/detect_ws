@@ -1,0 +1,15 @@
+pointcloud_processor:
+  ros__parameters:
+    input_topic: "/ouster/points"
+    output_topic: "/processed_cloud"
+    x_min: -5.0
+    x_max: 5.0
+    y_min: -3.0
+    y_max: 3.0
+    z_min: -1.0
+    z_max: 2.0
+    transform_matrix: [0.453163623810, -0.263210982084, 0.851682245731, -1.746215451773,
+0.785896480083, -0.332959741354, -0.521061003208 ,1.100357561283,
+0.420724868774 ,0.905460000038 ,0.055971335620 ,1.922401228849,
+0.000000000000 ,0.000000000000, 0.000000000000, 1.000000000000]
+    output_frame: "processed_frame"

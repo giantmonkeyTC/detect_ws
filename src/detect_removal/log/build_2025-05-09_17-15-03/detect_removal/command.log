@@ -1,0 +1,4 @@
+Invoking command in '/home/lance/detect_ws/detect_removal/build/detect_removal': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lance/detect_ws/detect_removal -DCMAKE_INSTALL_PREFIX=/home/lance/detect_ws/detect_removal/install/detect_removal
+Invoked command in '/home/lance/detect_ws/detect_removal/build/detect_removal' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lance/detect_ws/detect_removal -DCMAKE_INSTALL_PREFIX=/home/lance/detect_ws/detect_removal/install/detect_removal
+Invoking command in '/home/lance/detect_ws/detect_removal/build/detect_removal': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/detect_ws/detect_removal/build/detect_removal -- -j16 -l16
+Invoked command in '/home/lance/detect_ws/detect_removal/build/detect_removal' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/detect_ws/detect_removal/build/detect_removal -- -j16 -l16

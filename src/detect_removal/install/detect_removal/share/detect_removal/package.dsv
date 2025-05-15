@@ -1,0 +1,5 @@
+source;share/detect_removal/local_setup.bash
+source;share/detect_removal/local_setup.dsv
+source;share/detect_removal/local_setup.ps1
+source;share/detect_removal/local_setup.sh
+source;share/detect_removal/local_setup.zsh

@@ -1,0 +1,10 @@
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/uninstall.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/detect_removal_uninstall.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/detect_removal.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/test.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/edit_cache.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/rebuild_cache.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/list_install_components.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/install.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/install/local.dir
+/home/lance/detect_ws/detect_removal/build/detect_removal/CMakeFiles/install/strip.dir

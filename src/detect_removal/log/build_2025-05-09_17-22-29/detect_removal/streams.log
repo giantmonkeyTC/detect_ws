@@ -1,0 +1,126 @@
+[0.006s] Invoking command in '/home/lance/detect_ws/detect_removal/build/detect_removal': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/detect_ws/detect_removal/build/detect_removal -- -j16 -l16
+[0.024s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.102s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.120s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.122s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.125s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.174s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.245s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.336s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.409s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.481s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.565s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.585s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.760s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.764s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.856s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.860s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.863s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.951s] -- Found Qhull version 8.0.2
+[1.042s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.141s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.242s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.243s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.472s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[1.589s] -- Configuring done
+[1.613s] -- Generating done
+[1.615s] -- Build files have been written to: /home/lance/detect_ws/detect_removal/build/detect_removal
+[1.639s] [35m[1mConsolidate compiler generated dependencies of target detect_removal[0m
+[1.656s] [ 50%] [32mBuilding CXX object CMakeFiles/detect_removal.dir/src/detect_removal.cpp.o[0m
+[4.719s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:[m[K In member function ‘[01m[Kvoid ObjectDetector::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.719s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:68:14:[m[K [01;31m[Kerror: [m[K‘[01m[KfromROSMsg[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[4.720s]    68 |         pcl::[01;31m[KfromROSMsg[m[K(*msg, *current_cloud);
+[4.720s]       |              [01;31m[K^~~~~~~~~~[m[K
+[4.777s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::MarkerArray ObjectDetector::process_clouds(const Ptr&, const Ptr&)[m[K’:
+[4.777s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:133:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompute3DCentroid[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[4.777s]   133 |             pcl::[01;31m[Kcompute3DCentroid[m[K(*filtered_cloud, indices, centroid);
+[4.777s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.778s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:137:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[4.778s]   137 |             sphere.header.frame_id = [01;31m[Kmsg[m[K->header.frame_id;
+[4.778s]       |                                      [01;31m[K^~~[m[K
+[4.778s] [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:137:38:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.778s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.778s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.779s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:1[m[K:
+[4.779s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[4.779s]    27 | namespace [01;36m[Kmsg[m[K
+[4.779s]       |           [01;36m[K^~~[m[K
+[4.779s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.779s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:1[m[K:
+[4.779s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[4.779s]    27 | namespace [01;36m[Kmsg[m[K
+[4.779s]       |           [01;36m[K^~~[m[K
+[4.779s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.780s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:1[m[K:
+[4.780s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[4.780s]    27 | namespace [01;36m[Kmsg[m[K
+[4.780s]       |           [01;36m[K^~~[m[K
+[4.780s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:20[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7[m[K,
+[4.780s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:2[m[K:
+[4.780s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[4.780s]    31 | namespace [01;36m[Kmsg[m[K
+[4.780s]       |           [01;36m[K^~~[m[K
+[4.780s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:22[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7[m[K,
+[4.780s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:2[m[K:
+[4.780s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[4.780s]    27 | namespace [01;36m[Kmsg[m[K
+[4.780s]       |           [01;36m[K^~~[m[K
+[4.780s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:22[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:20[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp:7[m[K,
+[4.780s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:3[m[K:
+[4.780s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[4.780s]    27 | namespace [01;36m[Kmsg[m[K
+[4.780s]       |           [01;36m[K^~~[m[K
+[4.780s] In file included from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:35[m[K,
+[4.780s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:20[m[K,
+[4.781s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp:7[m[K,
+[4.781s]                  from [01m[K/home/lance/detect_ws/detect_removal/src/detect_removal.cpp:3[m[K:
+[4.781s] [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kvisualization_msgs::msg[m[K’
+[4.781s]    27 | namespace [01;36m[Kmsg[m[K
+[4.781s]       |           [01;36m[K^~~[m[K
+[6.917s] gmake[2]: *** [CMakeFiles/detect_removal.dir/build.make:76: CMakeFiles/detect_removal.dir/src/detect_removal.cpp.o] Error 1
+[6.917s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/detect_removal.dir/all] Error 2
+[6.917s] gmake: *** [Makefile:146: all] Error 2
+[6.919s] Invoked command in '/home/lance/detect_ws/detect_removal/build/detect_removal' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/detect_ws/detect_removal/build/detect_removal -- -j16 -l16
