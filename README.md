@@ -1,6 +1,6 @@
 Step 1:  
-  Replay your point cloud bag or real-time pointcloud(The subscribed point cloud topic has been set to /ouster/points,if you use other kinds of lidar,please replace the input topic)  
-  Command: ros2 bag play your-point-bag -l(optional)  
+>>Replay your point cloud bag or real-time pointcloud(The subscribed point cloud topic has been set to /ouster/points,if you use other kinds of lidar,please replace the input topic)  
+>>Command: ros2 bag play your-point-bag -l(optional)  
 Step 2:  
   Start the program  
   Command: cd detect_ws && colcon build   
