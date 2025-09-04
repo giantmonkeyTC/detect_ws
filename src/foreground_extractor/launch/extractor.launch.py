@@ -16,7 +16,13 @@ def generate_launch_description():
             parameters=[os.path.join(pkg_path, 'config', 'params.yaml')],
             output='screen'
         ),
-        
+        Node(
+            package='foreground_extractor',
+            executable='foreground_person_extractor',
+            name='foreground_person_extractor',
+            parameters=[os.path.join(pkg_path, 'config', 'params.yaml')],
+            output='screen'
+        ),
         # 静态TF变换：map -> base_link
         Node(
             package='tf2_ros',
@@ -35,7 +41,7 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # 静态TF变换：base_link -> os_sensor
+        # 静态TF变换：base_link -> os_sensor    just for rviz2 real-time showing,but origin pointcloud data not changed(/ouster/points) 
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',

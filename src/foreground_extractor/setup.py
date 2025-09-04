@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'foreground_extractor = foreground_extractor.foreground_extractor:main',
+            'foreground_person_extractor = foreground_extractor.foreground_person_extractor:main'
         ],
     },
 )

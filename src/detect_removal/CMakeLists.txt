@@ -1,3 +1,4 @@
+cmake_policy(SET CMP0074 NEW)
 cmake_minimum_required(VERSION 3.8)
 project(detect_removal)
 
@@ -8,7 +9,7 @@ find_package(visualization_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(std_srvs REQUIRED)
-find_package(PCL REQUIRED)
+find_package(PCL REQUIRED COMPONENTS common io filters kdtree segmentation)
 
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})

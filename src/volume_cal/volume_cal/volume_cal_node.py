@@ -6,6 +6,8 @@ from sensor_msgs_py import point_cloud2
 from sensor_msgs.msg import PointField
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point
+from rclpy.qos import QoSProfile, QoSHistoryPolicy, QoSReliabilityPolicy, QoSDurabilityPolicy
+
 
 
 class VolumeCal(Node):
@@ -18,16 +20,16 @@ class VolumeCal(Node):
             parameters=[
                 ('input_topic', '/ouster/points'),
                 ('output_topic', '/processed_cloud'),
-                ('x_min', -1.95), ('x_max', -1.0),
-                ('y_min', 1.0), ('y_max', 1.8),
-                ('z_min', 0.3), ('z_max', 1.6),
-                ('transform_matrix', [0.453163623810, -0.263210982084, 0.851682245731, -1.746215451773,
-0.785896480083, -0.332959741354, -0.521061003208 ,1.100357561283,
-0.420724868774 ,0.905460000038 ,0.055971335620 ,1.922401228849,
-0.000000000000 ,0.000000000000, 0.000000000000, 1.000000000000]), 
+                ('x_min', -3.3), ('x_max', -1.0),
+                ('y_min', -4.1), ('y_max', -1.9),
+                ('z_min', -0.4), ('z_max', 0.4),
+                ('transform_matrix', 
+            [-0.643753886223, -0.209196105599, 0.736082792282, -4.610776328481,
+            0.165232002735, -0.977215886116, -0.133220076561, -2.006507927920,
+            0.747180938721, 0.035863488913, 0.663652420044, 2.022653023053,
+            0.0, 0.0, 0.0, 1.0]), 
                 ('output_frame', 'base_link')
             ])
-        
         # 获取参数
         self.input_topic = self.get_parameter('input_topic').value
         self.output_topic = self.get_parameter('output_topic').value
@@ -42,13 +44,20 @@ class VolumeCal(Node):
         self.output_frame = self.get_parameter('output_frame').value
 
         self.marker_pub = self.create_publisher(Marker, 'visualization_marker', 10)
-        
+
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.KEEP_ALL,
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability=QoSDurabilityPolicy.VOLATILE,
+            depth=0
+        )
+
         # 初始化订阅和发布
         self.subscription = self.create_subscription(
             PointCloud2,
             self.input_topic,
             self.process_cloud,
-            10)
+            qos_profile)
         self.publisher = self.create_publisher(
             PointCloud2,
             self.output_topic,

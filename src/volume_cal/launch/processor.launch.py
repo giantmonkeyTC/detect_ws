@@ -41,14 +41,14 @@ def generate_launch_description():
             executable='static_transform_publisher',
             name='base_to_sensor',
             arguments=[
-                '--x', '-1.746215451773',   # 假设传感器前移0.5米
-                '--y', '1.100357561283',
-                '--z', '1.922401228849',   # 假设高度0.3米
-                '--roll', '1.50905949',
-                '--pitch', '-0.43424417',
-                '--yaw', '1.04774539',
+                '--x', '-4.610776328481',
+                '--y', '-2.006507927920',
+                '--z', '2.022653023053',
+                '--roll', '0.0540411029',
+                '--pitch', '-0.846023719',
+                '--yaw', '2.87851562',
                 '--frame-id', 'base_link',
-                '--child-frame-id', 'os_sensor'
+                '--child-frame-id', 'os_lidar'
             ],
             output='screen'
         )

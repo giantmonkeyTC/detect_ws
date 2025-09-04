@@ -136,6 +136,7 @@ private:
 
             // 球体标记
             visualization_msgs::msg::Marker sphere;
+            // sphere.header.frame_id = msg->header.frame_id;
             sphere.header.frame_id = current->header.frame_id;
             sphere.header.stamp = this->now();
             sphere.ns = "objects";
